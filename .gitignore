@@ -1,0 +1,67 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Bytecode cache
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# -------------------------
+# macOS
+# -------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.DS_Store?
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# -------------------------
+# FastAPI / Uvicorn specific
+# -------------------------
+# SQLite (if you use it locally)
+*.db
+*.sqlite3
+
+# Coverage / testing
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter notebooks (if used)
+.ipynb_checkpoints/
