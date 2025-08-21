@@ -10,7 +10,7 @@ class TextTabBase(BaseModel):
 
 
 class TextTabCreate(TextTabBase):
-    pass
+    title: constr(max_length=32)
 
 
 class TextTabUpdate(BaseModel):

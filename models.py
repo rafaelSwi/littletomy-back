@@ -3,6 +3,7 @@ from sqlalchemy import (
     Column, Integer, String, Boolean, DateTime, Text, ForeignKey, Table
 )
 from sqlalchemy.orm import relationship, declarative_base
+from schemas.user import UserPublic
 
 Base = declarative_base()
 
@@ -98,3 +99,9 @@ class User(Base):
 
     text_tabs = relationship("TextTab", back_populates="user")
     text_tab_logs = relationship("TextTabLog", back_populates="user")
+
+    def toPublic(self) -> UserPublic:
+        return UserPublic(
+            id=self.id,
+            username=self.username,
+        )
